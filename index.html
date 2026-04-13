@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entstehung einer Obligation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f0e6; /* beige */
+      color: #333;
+    }
+
+    header {
+      background-color: #cfe8f7; /* hellblau */
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .timeline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .step {
+      flex: 1;
+      background-color: #e6f4fb;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .question {
+      margin-bottom: 15px;
+      padding: 15px;
+      background-color: #f0f8ff;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .question:hover {
+      background-color: #d9eefc;
+    }
+
+    .answer {
+      display: none;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Entstehung einer Obligation (OR 1–20)</h1>
+</header>
+
+<div class="container">
+
+  <div class="section">
+    <h2>Kontrollfragen</h2>
+
+    <div class="question" onclick="toggleAnswer(this)">
+      1. Wann kommt ein Vertrag zustande?
+      <div class="answer">Wenn sich beide Parteien einig sind (Antrag + Annahme)</div>
+    </div>
+
+    <div class="question" onclick="toggleAnswer(this)">
+      2. Muss man sich über alle Punkte einigen?
+      <div class="answer">Nein, nur über wesentliche Punkte</div>
+    </div>
+
+    <div class="question" onclick="toggleAnswer(this)">
+      3. Was passiert nach Ablauf einer Annahmefrist?
+      <div class="answer">Das Angebot ist nicht mehr gültig</div>
+    </div>
+
+    <div class="question" onclick="toggleAnswer(this)">
+      4. Wie lange gilt ein Angebot unter Anwesenden?
+      <div class="answer">Nur während des Gesprächs</div>
+    </div>
+
+    <div class="question" onclick="toggleAnswer(this)">
+      5. Wie lange gilt ein Angebot unter Abwesenden?
+      <div class="answer">Während einer angemessenen Zeit</div>
+    </div>
+
+    <div class="question" onclick="toggleAnswer(this)">
+      6. Was ist eine stillschweigende Annahme?
+      <div class="answer">Wenn ein Vorteil nicht abgelehnt wird</div>
+    </div>
+
+    <div class="question" onclick="toggleAnswer(this)">
+      7. Muss man unbestellte Waren bezahlen?
+      <div class="answer">Nein</div>
+    </div>
+
+    <div class="question" onclick="toggleAnswer(this)">
+      8. Ist ein Inserat verbindlich?
+      <div class="answer">Nein – Preisschilder sind aber verbindlich</div>
+    </div>
+
+    <div class="question" onclick="toggleAnswer(this)">
+      9. Wann beginnt ein Vertrag zu wirken?
+      <div class="answer">Beim Absenden der Annahme</div>
+    </div>
+
+    <div class="question" onclick="toggleAnswer(this)">
+      10. Was bedeutet Formfreiheit?
+      <div class="answer">Verträge können mündlich oder schriftlich sein</div>
+    </div>
+
+    <div class="question" onclick="toggleAnswer(this)">
+      Bonus: Wann ist ein Vertrag nichtig?
+      <div class="answer">Wenn er gegen das Gesetz verstösst</div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  © 2026 – Schulprojekt Obligationenrecht
+</footer>
+
+<script>
+  function toggleAnswer(element) {
+    const answer = element.querySelector('.answer');
+    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>
