@@ -1,162 +1,171 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Entstehung einer Obligation</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f5f0e6; /* beige */
-      color: #333;
-    }
-
-    header {
-      background-color: #cfe8f7; /* hellblau */
-      padding: 60px 20px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    header h1 {
-      margin: 0;
-    }
-
-    .container {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .section {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .timeline {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .step {
-      flex: 1;
-      background-color: #e6f4fb;
-      padding: 15px;
-      border-radius: 8px;
-      text-align: center;
-    }
-
-    .question {
-      margin-bottom: 15px;
-      padding: 15px;
-      background-color: #f0f8ff;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .question:hover {
-      background-color: #d9eefc;
-    }
-
-    .answer {
-      display: none;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      color: #666;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MC Kontrollfragen OR 1–20</title>
+<style>
+body {font-family: Arial; margin:0; background:#f5f0e6;}
+header {background:#cfe8f7; padding:20px; text-align:center;}
+.container {max-width:1000px; margin:auto; padding:20px;}
+.section {background:white; padding:20px; margin-bottom:20px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1);} 
+.question {margin-bottom:30px; padding:15px; background:#eef7fc; border-radius:8px;}
+.answer {display:none; margin-top:15px; background:#fff3cd; padding:10px; border-radius:6px;}
+button {margin-top:20px; padding:10px 14px; border:none; background:#cfe8f7; cursor:pointer; border-radius:5px;}
+</style>
 </head>
 <body>
 
 <header>
-  <h1>Entstehung einer Obligation (OR 1–20)</h1>
+<h1>MC-Kontrollfragen (OR 1–20)</h1>
+<p>Finde jeweils die falsche Aussage</p>
 </header>
 
 <div class="container">
 
-  <div class="section">
-    <h2>Kontrollfragen</h2>
+<div class="section">
+<h2>Einfache Fragen</h2>
 
-    <div class="question" onclick="toggleAnswer(this)">
-      1. Wann kommt ein Vertrag zustande?
-      <div class="answer">Wenn sich beide Parteien gegenseitig übereinstimmend einigen (Antrag + Annahme).</div>
-    </div>
+<div class="question">
+<b>Markieren Sie eindeutig die einzige, falsche Aussage zum Vertragsabschluss (Art. 1 OR).</b><br><br>
+A) Ein Vertrag kann ausdrücklich (mündlich/schriftlich) abgeschlossen werden.<br>
+B) Ein Vertrag kann stillschweigend durch entsprechendes Verhalten zustande kommen.<br>
+C) Ein Vertrag ist nur gültig, wenn er von einem Notar beglaubigt wurde.<br>
+D) Die Parteien müssen sich über die wesentlichen Punkte einig sein.
+<br>
+<button onclick="toggle(this)">Lösung anzeigen</button>
+<div class="answer">❌ C ist falsch, da Grundsatz der Formfreiheit gilt (Art. 11 OR)</div>
+</div>
 
-    <div class="question" onclick="toggleAnswer(this)">
-      2. Muss man sich über alle Punkte einigen, damit ein Vertrag gültig ist?
-      <div class="answer">Nein, nur über die wesentlichen Punkte (z. B. Preis). Nebenpunkte sind nicht zwingend.</div>
-    </div>
+<div class="question">
+<b>Markieren Sie eindeutig die einzige, falsche Antwort. Was gilt bei unbestellten Sachen (Art. 6a OR)?</b><br><br>
+A) Man ist nicht verpflichtet, sie zurückzusenden.<br>
+B) Man darf die Sache behalten oder entsorgen.<br>
+C) Man muss dem Absender in jedem Fall eine Rechnung für die Lagerung stellen.<br>
+D) Bei einer offensichtlich irrtümlichen Zustellung muss der Absender benachrichtigt werden.
+<br>
+<button onclick="toggle(this)">Lösung anzeigen</button>
+<div class="answer">❌ C ist falsch (Art. 6a OR)</div>
+</div>
 
-    <div class="question" onclick="toggleAnswer(this)">
-      3. Was passiert nach Ablauf einer Annahmefrist?
-      <div class="answer">Das Angebot ist nicht mehr gültig und der Anbieter ist nicht mehr gebunden.</div>
-    </div>
+<div class="question">
+<b>Markieren Sie eindeutig die einzige, falsche Aussage zur Verbindlichkeit (Art. 7 OR).</b><br><br>
+A) Ein Inserat in einer Zeitung ist ein unverbindlicher Antrag.<br>
+B) Die Versendung von Tarifen und Preislisten gilt nicht als Antrag.<br>
+C) Die Auslage von Waren mit Angabe des Preises gilt in der Regel als verbindlicher Antrag.<br>
+D) Ein Preisschild im Schaufenster ist rechtlich immer nur eine Einladung zur Offerte und nie verbindlich.
+<br>
+<button onclick="toggle(this)">Lösung anzeigen</button>
+<div class="answer">❌ D ist falsch</div>
+</div>
 
-    <div class="question" onclick="toggleAnswer(this)">
-      4. Wie lange gilt ein Angebot unter Anwesenden ohne Frist?
-      <div class="answer">Nur während des Gesprächs. Danach ist es nicht mehr verbindlich.</div>
-    </div>
+<div class="question">
+<b>Welche Aussage zum Widerruf eines Antrags ist falsch (Art. 9 OR)?</b><br><br>
+A) Der Widerruf ist gültig, wenn er vor dem Antrag beim Empfänger eintrifft.<br>
+B) Der Widerruf ist gültig, wenn er gleichzeitig mit dem Antrag eintrifft.<br>
+C) Ein Widerruf ist auch dann noch gültig, wenn er zwei Tage nach der Annahme eintrifft.<br>
+D) Kennt der Empfänger den Widerruf vor dem Antrag, ist dieser wirksam.
+<br>
+<button onclick="toggle(this)">Lösung anzeigen</button>
+<div class="answer">❌ C ist falsch (Art. 9 OR)</div>
+</div>
 
-    <div class="question" onclick="toggleAnswer(this)">
-      5. Wie lange gilt ein Angebot unter Abwesenden ohne Frist?
-      <div class="answer">Während einer angemessenen Zeit (z. B. einige Tage).</div>
-    </div>
+<div class="question">
+<b>Markieren Sie eindeutig die einzige, falsche Aussage zur Form der Verträge (Art. 11 OR).</b><br><br>
+A) Die meisten Verträge im Alltag können mündlich abgeschlossen werden.<br>
+B) Ein Kaufvertrag über ein Handy muss zwingend schriftlich sein, um gültig zu sein.<br>
+C) Besondere Formvorschriften dienen oft dem Schutz der schwächeren Partei (z. B. Lehrling).<br>
+D) Wenn das Gesetz keine Form vorschreibt, herrscht Formfreiheit.
+<br>
+<button onclick="toggle(this)">Lösung anzeigen</button>
+<div class="answer">❌ B ist falsch (Art. 11 OR)</div>
+</div>
 
-    <div class="question" onclick="toggleAnswer(this)">
-      6. Was ist eine stillschweigende Annahme?
-      <div class="answer">Wenn ein Angebot nur Vorteile bringt und nicht abgelehnt wird.</div>
-    </div>
-
-    <div class="question" onclick="toggleAnswer(this)">
-      7. Muss man unbestellte Waren bezahlen oder zurückschicken?
-      <div class="answer">Nein, man ist nicht dazu verpflichtet.</div>
-    </div>
-
-    <div class="question" onclick="toggleAnswer(this)">
-      8. Ist ein Inserat verbindlich? Und ein Preisschild im Laden?
-      <div class="answer">Ein Inserat ist unverbindlich, jedoch ein Preisschild im Laden ist verbindlich.</div>
-    </div>
-
-    <div class="question" onclick="toggleAnswer(this)">
-      9. Wann beginnt ein Vertrag unter Abwesenden zu wirken?
-      <div class="answer">Sobald die Annahme abgeschickt wird.</div>
-    </div>
-
-    <div class="question" onclick="toggleAnswer(this)">
-      10. Was bedeutet Formfreiheit bei Verträgen? 
-      <div class="answer">Verträge können grundsätzlich mündlich oder schriftlich abgeschlossen werden, ausser das Gesetz schreibt eine Form vor.</div>
-    </div>
-
-    <div class="question" onclick="toggleAnswer(this)">
-      Bonus: Wann ist ein Vertrag nichtig?
-      <div class="answer">Wenn er gegen das Gesetz verstösst (z. B. illegaler Inhalt).</div>
-    </div>
-
-  </div>
+<div class="question">
+<b>Markieren Sie eindeutig die einzige, falsche Aussage. Mia kauft ein Handy (Art. 1-2 OR).</b><br><br>
+A) Der Preis ist ein wesentlicher Vertragspunkt.<br>
+B) Der Ort der Übergabe ist ein Nebenpunkt.<br>
+C) Mia und der Verkäufer müssen sich über den Preis einig sein.<br>
+D) Keine der Aussagen ist falsch.
+<br>
+<button onclick="toggle(this)">Lösung anzeigen</button>
+<div class="answer">✔️ D ist korrekt</div>
+</div>
 
 </div>
 
-<footer>
-  © 2026 – Schulprojekt Obligationenrecht
-</footer>
+<div class="section">
+<h2>Mittelschwere Fragen</h2>
+
+<div class="question">
+<b>Markieren Sie eindeutig die einzige, falsche Aussage zur Annahmefrist (Art. 3-5 OR).</b><br><br>
+A) Bei einem Antrag unter Anwesenden (Telefon/persönlich) muss die Annahme sofort erfolgen.<br>
+B) Bei einem Antrag unter Abwesenden (Brief/E-Mail) bleibt der Anbieter so lange gebunden, wie eine ordnungsgemässe Antwort dauern darf.<br>
+C) Wenn Mias Kollege ihr eine Frist bis Samstag setzt und Mia erst am Sonntag zusagt, ist der Kollege weiterhin rechtlich an sein ursprüngliches Angebot gebunden.<br>
+D) Eine verspätete Annahme gilt rechtlich als ein neuer Antrag.
+<br>
+<button onclick="toggle(this)">Lösung anzeigen</button>
+<div class="answer">❌ C ist falsch (Art. 3-5 OR)</div>
+</div>
+
+<div class="question">
+<b>Markieren Sie die einzige, falsche Antwort zur Unterschrift bei schriftlichen Verträgen (Art. 13-15 OR).</b><br><br>
+A) Die Unterschrift muss grundsätzlich eigenhändig geschrieben sein.<br>
+B) Alle Personen, die durch den Vertrag verpflichtet werden, müssen unterschreiben.<br>
+C) Eine Fotokopie einer Unterschrift ist im rechtlichen Sinne einer eigenhändigen Unterschrift immer gleichgestellt.<br>
+D) Für Blinde ist eine Beglaubigung der Unterschrift oder ein Handzeichen unter Umständen als Ersatz möglich.
+<br>
+<button onclick="toggle(this)">Lösung anzeigen</button>
+<div class="answer">❌ C ist falsch (Art. 13-15 OR)</div>
+</div>
+
+<div class="question">
+<b>Markieren Sie eindeutig die einzige, falsche Aussage zur Auslegung und zum Inhalt (Art. 18-19 OR).</b><br><br>
+A) Bei der Beurteilung eines Vertrages ist der wirkliche Wille der Parteien massgebend, nicht eine falsche Bezeichnung.<br>
+B) Der Inhalt eines Vertrages kann innerhalb der Schranken des Gesetzes beliebig festgelegt werden.<br>
+C) Wenn sich Mia und ihr Kollege beim Verkauf über den Typ des Handys irren, aber beide das gleiche Gerät meinen, ist der Vertrag automatisch ungültig.<br>
+D) Abweichungen von gesetzlichen Vorschriften sind nur zulässig, wo das Gesetz nicht zwingendes Recht aufstellt.
+<br>
+<button onclick="toggle(this)">Lösung anzeigen</button>
+<div class="answer">❌ C ist falsch (Art. 18 OR)</div>
+</div>
+
+</div>
+
+<div class="section">
+<h2>Schwierige Fragen</h2>
+
+<div class="question">
+<b>Markieren Sie eindeutig die einzige, falsche Aussage zur Nichtigkeit (Art. 20 OR).</b><br><br>
+A) Ein Vertrag über den Kauf von Kokain ist wegen Widerrechtlichkeit nichtig.<br>
+B) Ein Vertrag, der eine objektiv unmögliche Leistung verspricht, entfaltet keine Rechtswirkung.<br>
+C) Ein nichtiger Vertrag kann durch die nachträgliche Genehmigung der Parteien ohne neue Unterschrift geheilt werden.<br>
+D) Verstösst nur ein Teil des Vertrages gegen das Gesetz, ist in der Regel auch nur dieser Teil nichtig (Teilnichtigkeit).
+<br>
+<button onclick="toggle(this)">Lösung anzeigen</button>
+<div class="answer">❌ C ist falsch (Art. 20 OR)</div>
+</div>
+
+<div class="question">
+<b>Welcher Aspekt zur Entstehung von Obligationen (Art. 1-20 OR) ist falsch?</b><br><br>
+A) Der Vertragswille muss bei beiden Parteien tatsächlich vorhanden sein.<br>
+B) Formvorschriften können auch von den Parteien selbst freiwillig vereinbart werden (Art. 16 OR).<br>
+C) Die Wirkung eines Vertrages unter Abwesenden beginnt mit der Absendung der Annahme.<br>
+D) Ein Preisausschreiben (Art. 8 OR) verpflichtet den Auslober nur dann zur Zahlung, wenn er die Leistung nach dem Wettbewerb nochmals ausdrücklich bestätigt.
+<br>
+<button onclick="toggle(this)">Lösung anzeigen</button>
+<div class="answer">❌ D ist falsch (Art. 8 OR)</div>
+</div>
+
+</div>
+
+</div>
 
 <script>
-  function toggleAnswer(element) {
-    const answer = element.querySelector('.answer');
-    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-  }
+function toggle(btn){
+  const ans = btn.nextElementSibling;
+  ans.style.display = ans.style.display === 'block' ? 'none' : 'block';
+}
 </script>
 
 </body>
